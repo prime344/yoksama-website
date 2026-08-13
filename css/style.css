@@ -1,8 +1,8 @@
-/*Gloock for headings*/
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+/*Merriweather for headings*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-/*Fjalla One for content*/
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+/*Roboto Mono for content*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
     --base-color: #ffffff;
@@ -18,4 +18,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color)
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
 }
